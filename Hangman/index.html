@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/main.css">
+    <title>Hangman</title>
+</head>
+<body>
+    
+    <div class="welcome">
+        <h1>Welcome to hangman</h1>
+        <h3>Can you save the guy from hanging?</h3>
+    </div>
+
+    <div class="question-area">
+        <div class="Alphabets">
+        <button id="btn" value="A">A</button>
+        <button id="btn" value="B">B</button>
+        <button id="btn" value="C">C</button>
+        <button id="btn" value="D">D</button>
+        <button id="btn" value="E">E</button>
+        <button id="btn" value="F">F</button>
+        <button id="btn" value="G">G</button>
+        <button id="btn" value="H">H</button>
+        <button id="btn" value="I">I</button>
+        <button id="btn" value="J">J</button>
+        <button id="btn" value="K">K</button>
+        <button id="btn" value="L">L</button>
+        <button id="btn" value="M">M</button>
+        <button id="btn" value="N">N</button>
+        <button id="btn" value="O">O</button>
+        <button id="btn" value="P">P</button>
+        <button id="btn" value="Q">Q</button>
+        <button id="btn" value="R">R</button>
+        <button id="btn" value="S">S</button>
+        <button id="btn" value="T">T</button>
+        <button id="btn" value="U">U</button>
+        <button id="btn" value="V">V</button>
+        <button id="btn" value="W">W</button>
+        <button id="btn" value="X">X</button>
+        <button id="btn" value="Y">Y</button>
+        <button id="btn" value="Z">Z</button>
+        </div>
+
+        <div Id="Input-Area"></div>
+
+        <div id="Hint"></div>
+    </div>
+
+
+    <div class="hang-man">
+        <div class="lives">
+            <p>You have <span id="live"></span> lives</p>
+        </div>
+
+        <div class="man">
+            <div class="man-outer">
+                <div class="base M"></div>
+                <div class="mid M"></div>
+                <div class="top M"></div>
+                <div class="rope M"></div>
+                <div class="face M"></div>
+                <div class="body M"></div>
+                <div class="arm-1 M"></div>
+                <div class="arm-2 M"></div>
+                <div class="leg-1 M"></div>
+                <div class="leg-2 M"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
