@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  background-color: #194655;
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  border: 4px dotted black;
+}
+
+.question-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question-area .Alphabets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70%;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px dotted black;
+  padding: 20px;
+}
+
+.question-area .Alphabets button {
+  display: block;
+  padding: 20px;
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  background-color: #535353;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.question-area .Alphabets button:hover {
+  -webkit-transform: translate(10%, 10%);
+          transform: translate(10%, 10%);
+  border: 2px solid white;
+  color: white;
+}
+
+.question-area #Input-Area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.question-area #Input-Area .Input {
+  display: block;
+  padding: 20px;
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  border: 2px solid black;
+}
+
+.question-area #Hint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.hang-man {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hang-man .lives {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+}
+
+.hang-man .man {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+}
+
+.hang-man .man-outer {
+  position: relative;
+  display: block;
+  width: 350px;
+  height: 350px;
+  border: 2px dotted black;
+}
+
+.hang-man .man-outer .base {
+  display: none;
+  position: relative;
+  width: 80%;
+  height: 17.5px;
+  background-color: #861f1f;
+  top: 90%;
+  left: 12%;
+}
+
+.hang-man .man-outer .mid {
+  display: none;
+  position: relative;
+  width: 17.5px;
+  height: 80%;
+  background-color: #861f1f;
+  top: 10%;
+  left: 15%;
+}
+
+.hang-man .man-outer .top {
+  display: none;
+  position: relative;
+  width: 60%;
+  height: 17.5px;
+  background-color: #861f1f;
+  top: -65%;
+  left: 15%;
+}
+
+.hang-man .man-outer .rope {
+  display: none;
+  position: relative;
+  width: 3px;
+  height: 8%;
+  background-color: #861f1f;
+  top: -65%;
+  left: 67.5%;
+}
+
+.hang-man .man-outer .face {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: -65%;
+  left: 63.6%;
+  border-radius: 50%;
+  border: 3px solid #861f1f;
+}
+
+.hang-man .man-outer .body {
+  display: none;
+  position: relative;
+  width: 4px;
+  height: 11%;
+  background-color: #861f1f;
+  top: -65%;
+  left: 67.2%;
+}
+
+.hang-man .man-outer .arm-1 {
+  display: none;
+  position: relative;
+  width: 25px;
+  height: 1%;
+  background-color: #861f1f;
+  top: -72.5%;
+  left: 67.2%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.hang-man .man-outer .arm-2 {
+  display: none;
+  position: relative;
+  width: 25px;
+  height: 1%;
+  background-color: #861f1f;
+  top: -73.5%;
+  left: 61.5%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.hang-man .man-outer .leg-1 {
+  display: none;
+  position: relative;
+  width: 35px;
+  height: 1%;
+  background-color: #861f1f;
+  top: -64%;
+  left: 65.5%;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.hang-man .man-outer .leg-2 {
+  display: none;
+  position: relative;
+  width: 35px;
+  height: 1%;
+  background-color: #861f1f;
+  top: -65%;
+  left: 60%;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+/*# sourceMappingURL=main.css.map */
